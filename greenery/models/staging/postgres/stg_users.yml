@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: stg_users
+    description: |- 
+      staging layer for our users that create accounts on the greenery site
+    columns:
+      - name: user_guid
+        description: unique identifer for a specifc user
+        tests:
+          - not_null
+          - unique
+      - name: address_guid
+        description: unique identifier for an address
+      - name: first_name
+        description: first name of a user
+      - name: last_name
+        description: last name of a user
+      - name: email
+        description: email associated with a user to log in
+      - name: phone_number
+        description: user's phone number
+      - name: created_at_utc
+        description: timestamp at which a user was created in the database
+      - name: updated_at_utc
+        description: timestamp at which a user was updated in the database
