@@ -12,4 +12,4 @@ Apache 2.0
 [Week 1](./greenery/week1.md) 
 
 # Week 2 Project 
-[Week 2](./greenery/week2.md) cd
+[Week 2](./greenery/week2.md)
