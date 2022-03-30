@@ -8,7 +8,7 @@ WITH users AS(
 SELECT
     *
 FROM {{ ref('dim_users')}}
-), session_lengths AS(
+), session_lengths AS( --this can be removed and the join can be changed ti int_session_lengths
 SELECT
     session_guid,
     MIN(created_at) AS session_started_at,
