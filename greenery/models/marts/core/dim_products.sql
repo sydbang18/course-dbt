@@ -16,7 +16,7 @@ GROUP BY 1
 )
 SELECT
   stg_products.product_guid,
-  name,
+  name AS product_name,
   price,
   inventory,
   counts.total_orders AS total_purchased_count,

@@ -12,5 +12,7 @@ SELECT
     page_url,
     event_type,
     order_guid,
-    product_guid
+    stg_events.product_guid,
+    dim_products.product_name
 FROM {{ ref('stg_events') }}
+LEFT JOIN {{ ref('dim_products') }} ON dim_products.product_guid = stg_events.product_guid

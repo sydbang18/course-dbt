@@ -13,3 +13,6 @@ Apache 2.0
 
 # Week 2 Project 
 [Week 2](./greenery/week2.md)
+
+# Week 3 Project 
+[Week 3](./greenery/week3.md)
